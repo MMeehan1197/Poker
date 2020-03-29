@@ -1,13 +1,14 @@
 {
+  "homepage": "http://MMeehan1197.github.io/Poker",
   "name": "Poker",
   "version": "0.0.1",
   "private": false,
   "scripts": {
     "start": "node app.js"
   },
-  "repository": { 
-    "type" : "git",
-    "url" : "https://github.com/geobalas/Poker"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geobalas/Poker"
   },
   "dependencies": {
     "express": "~3.4.7",
@@ -16,5 +17,12 @@
     "less-middleware": "~1.0.4",
     "socket.io": "~1.2.0",
     "connect": "~3.3.3"
+  },
+  "script":{
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
